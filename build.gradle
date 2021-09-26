@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'ru.lexnasoft.wolfram.backend'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '8'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            // more goes in here
+        }
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    compileOnly('com.google.code.gson:gson:2.8.7')
+}
