@@ -14,20 +14,17 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
 @Getter
 @Setter
 @Accessors(chain = true)
-public class OwnedProductDTO implements Serializable {
+public class AvailableProductDTO implements Serializable {
     @Expose
     private UUID productId;
-    @Expose
-    private UUID purchasedProductId;
     @Expose
     private UUID platformProductId;
     @Expose
     private Platform purchasePlatform;
-    @Expose
-    private String purchasedProductExternalId;
     @Expose
     private String platformProductExternalId;
     @Expose
@@ -36,10 +33,7 @@ public class OwnedProductDTO implements Serializable {
     private String localizedDescription;
     @Expose
     private String productGroup;
-    @Expose
-    private Instant activeTill;
-    @Expose
-    private PurchasedProductStatus status;
+
     @Expose
     private List<LicenseParameter> licenseParameters=new ArrayList<>();
 

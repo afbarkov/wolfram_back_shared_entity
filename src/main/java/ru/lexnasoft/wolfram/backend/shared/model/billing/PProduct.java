@@ -19,13 +19,13 @@ public class PProduct extends PObject {
     private String productCode;
     @Expose
     private boolean onSale;
-//    @Expose
-//    private List<PProductParameter> productParameters=new ArrayList<>();
     @Expose
     private List<PProductLicenseParameter> licenseParameters=new ArrayList<>();
 
     @Expose
     private List<PLocalizedString> description;
+    @Expose
+    private String productGroup;
 
 
 }
