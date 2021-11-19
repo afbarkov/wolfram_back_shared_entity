@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import lombok.Getter;
 import lombok.Setter;
 import ru.lexnasoft.wolfram.backend.shared.model.PObject;
+import ru.lexnasoft.wolfram.backend.shared.model.trainings.enums.SetType;
 
 import java.time.Duration;
 import java.util.UUID;
@@ -25,4 +26,8 @@ public class PWorkoutExerciseSet extends PObject {
     private int orderNum;
     @Expose
     private Duration restDuration;
+    @Expose
+    private SetType setType;
+    @Expose
+    private UUID parentSet;
 }
