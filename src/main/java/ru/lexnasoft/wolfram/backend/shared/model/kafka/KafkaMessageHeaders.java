@@ -8,5 +8,8 @@ public class KafkaMessageHeaders {
     public static final String ENTITY_TYPE="entityType";
     public static final String ENTITY_ID="entityId";
     public static final String BUSINESS_OPERATION_NAME="businessOperationName";
+    public static final String MESSAGE_TYPE="messageType";
+
+
 
 }

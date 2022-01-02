@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import lombok.Getter;
 import lombok.Setter;
 import ru.lexnasoft.wolfram.backend.shared.model.PObject;
+import ru.lexnasoft.wolfram.backend.shared.model.trainings.enums.ExerciseType;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -23,5 +24,9 @@ public class PWorkoutExercise extends PObject {
     private Integer orderNum;
     @Expose
     private UUID workoutId;
+    @Expose
+    private ExerciseType exerciseType;
+    @Expose
+    private UUID parentExerciseId;
 
 }
