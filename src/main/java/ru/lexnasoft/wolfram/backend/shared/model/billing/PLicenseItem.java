@@ -12,4 +12,6 @@ public class PLicenseItem {
     private LicenseItemType type;
     @Expose
     private Integer value;
+    @Expose
+    private Integer used;
 }
